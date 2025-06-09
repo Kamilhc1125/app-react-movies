@@ -1,4 +1,4 @@
-import { Box, Grid, Paper } from "@mui/material";
+import { Box, Paper } from "@mui/material";
 import { MovieDataType } from "../../assets/data";
 import MovieCard from "../movie-card";
 
@@ -15,10 +15,6 @@ const MovieList = ({ recommendList }: MovieListProps) => {
         gap: 2,
         overflowX: "auto",
         whiteSpace: "nowrap",
-        // padding: 1,
-        // "&::-webkit-scrollbar": {
-        //   display: "none", // hide scrollbar
-        // },
       }}
     >
       {recommendList.map((movie) => (
