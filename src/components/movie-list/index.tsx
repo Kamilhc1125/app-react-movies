@@ -7,19 +7,32 @@ interface MovieListProps {
 }
 
 const MovieList = ({ recommendList }: MovieListProps) => {
+
   return (
-    <Box sx={{
-      display: "flex",
-      gap: 2,
-      overflowX: 'auto',
-      whiteSpace: 'nowrap',
-    }}>
+    <Box
+      sx={{
+        display: "flex",
+        gap: 2,
+        overflowX: "auto",
+        whiteSpace: "nowrap",
+        // padding: 1,
+        // "&::-webkit-scrollbar": {
+        //   display: "none", // hide scrollbar
+        // },
+      }}
+    >
       {recommendList.map((movie) => (
-        <Grid key={movie.id}>
+        <Box
+          key={movie.id}
+          sx={{
+            flex: "0 0 20%", // 5 items per row
+            maxWidth: "20%",
+          }}
+        >
           <Paper elevation={0} sx={{ backgroundColor: "transparent" }}>
             <MovieCard movie={movie} />
           </Paper>
-        </Grid>
+        </Box>
       ))}
     </Box>
   )

@@ -69,7 +69,7 @@ const Bookmark = () => {
         ) : (
           <Box width="100%">
             <Typography>
-              Found {searchList.length} results "{search}"{""}
+              Found {searchList.length} {searchList.length == 1 ? "result" : "results"} "{search}"{""}
             </Typography>
             <MovieList recommendList={searchList} />
           </Box>

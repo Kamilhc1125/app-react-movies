@@ -1,6 +1,5 @@
 import { createContext, ReactNode, useReducer } from "react";
 import { MovieDataType, moviesData } from "../assets/data";
-import Movie from "../pages/movie";
 
 interface MovieContextProps {
   children: ReactNode

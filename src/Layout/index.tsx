@@ -22,7 +22,7 @@ const Layout = ({ children }: LayoutProps) => {
       height: "100vh"
     }}>
       <Sidebar />
-      <Box sx={{ width: "100%", overflowY: "scroll" }}>{children}</Box>
+      <Box sx={{ width: "100%", overflowY: "hidden" }}>{children}</Box>
     </Box >
   )
 }

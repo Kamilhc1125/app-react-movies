@@ -1,11 +1,11 @@
-import React from 'react'
+import Layout from '../../Layout';
 
 const Error = () => {
   return (
-    <div>
+    <Layout>
       Error
-    </div>
+    </Layout>
   )
 }
 
-export default Error
+export default Error;
