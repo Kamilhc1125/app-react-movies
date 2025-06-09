@@ -1,9 +1,6 @@
-import HomeIcon from "../icons/home-icon"
-import MovieIcon from '../icons/movie-icon';
-import BookmarkIcon from '../icons/bookmark-icon';
-import TvSeriesIcon from '../icons/series-icon';
 import { Link, useLocation } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
+import { HomeIcon, MovieIcon, BookmarkIcon, TvSeriesIcon } from "../icons";
 
 const navLinks = [
   {
@@ -70,7 +67,12 @@ const Sidebar = () => {
           my={2}
           fontWeight={400}
           fontSize={18}>
-          Movie App
+          <Link
+            to="/"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Movie App
+          </Link>
         </Typography>
         <Box sx={{
           py: {
